@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/cespare/xxhash"
-	"github.com/zeebo/xxh3"
+	xxh3 "github.com/peroxyacyl/xxh3_seed"
 )
 
 func BenchmarkCompare(b *testing.B) {

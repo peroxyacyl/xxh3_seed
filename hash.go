@@ -1,4 +1,4 @@
-package xxh3
+package xxh3_seed
 
 import "math/bits"
 
@@ -71,7 +71,7 @@ func hashSmall(p ptr, l int, seed uint64) (acc u64) {
 		return xxhAvalancheSmall(seed ^ key64_056 ^ key64_064)
 	}
 
-	return xxhAvalancheSmall(acc ^ (u64(key32_000 ^ key32_004) + seed))
+	return xxhAvalancheSmall(acc ^ (u64(key32_000^key32_004) + seed))
 }
 
 func hashMed(p ptr, l int, seed uint64) (acc u64) {
@@ -110,8 +110,8 @@ func hashMed(p ptr, l int, seed uint64) (acc u64) {
 		} // 32
 
 		acc += mulFold64(
-			readU64(p, 0*8)^(key64_000 + seed),
-			readU64(p, 1*8)^(key64_008 - seed))
+			readU64(p, 0*8)^(key64_000+seed),
+			readU64(p, 1*8)^(key64_008-seed))
 
 		acc += mulFold64(
 			readU64(p, ui(l)-2*8)^(key64_016+seed),

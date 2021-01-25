@@ -1,4 +1,4 @@
-module github.com/zeebo/xxh3/avo
+module github.com/peroxyacyl/xxh3_seed/avo
 
 go 1.13
 

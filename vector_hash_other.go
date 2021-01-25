@@ -1,6 +1,6 @@
 // +build !amd64
 
-package xxh3
+package xxh3_seed
 
 const (
 	avx2 = false

@@ -1,4 +1,4 @@
-This is forked from zeebo/xxh3 and supporting seed. 
+This is forked from zeebo/xxh3 and supporting *seed*. 
 
 # XXH3
 [![GoDoc](https://godoc.org/github.com/zeebo/xxh3?status.svg)](https://godoc.org/github.com/zeebo/xxh3)

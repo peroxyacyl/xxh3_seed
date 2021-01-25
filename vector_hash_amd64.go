@@ -1,4 +1,4 @@
-package xxh3
+package xxh3_seed
 
 import (
 	"unsafe"
@@ -37,6 +37,6 @@ func hashVector(p ptr, l u64, secret ptr) (acc u64) {
 	acc += mulFold64(accs[2]^readU64(secret, 27), accs[3]^readU64(secret, 35))
 	acc += mulFold64(accs[4]^readU64(secret, 43), accs[5]^readU64(secret, 51))
 	acc += mulFold64(accs[6]^readU64(secret, 59), accs[7]^readU64(secret, 67))
-	
+
 	return xxh3Avalanche(acc)
 }

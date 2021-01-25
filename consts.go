@@ -1,8 +1,8 @@
-package xxh3
+package xxh3_seed
 
 const (
-	_stripe = 64
-	_block  = 1024
+	_stripe     = 64
+	_block      = 1024
 	secret_size = 192
 
 	prime32_1 = 2654435761

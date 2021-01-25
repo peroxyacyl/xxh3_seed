@@ -1,4 +1,4 @@
-package xxh3
+package xxh3_seed
 
 import (
 	"encoding/binary"
@@ -22,7 +22,7 @@ func readU16(p ptr, o ui) uint16 { return le.Uint16((*[2]byte)(ptr(ui(p) + o))[:
 func readU32(p ptr, o ui) uint32 { return le.Uint32((*[4]byte)(ptr(ui(p) + o))[:]) }
 func readU64(p ptr, o ui) uint64 { return le.Uint64((*[8]byte)(ptr(ui(p) + o))[:]) }
 
-func writeU64(p ptr, o ui, v u64) { le.PutUint64((*[8]byte)(ptr(ui(p) + o))[:], v)}
+func writeU64(p ptr, o ui, v u64) { le.PutUint64((*[8]byte)(ptr(ui(p) + o))[:], v) }
 
 func xxhAvalancheSmall(x u64) u64 {
 	x ^= x >> 33

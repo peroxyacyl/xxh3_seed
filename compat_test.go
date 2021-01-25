@@ -1,4 +1,4 @@
-package xxh3
+package xxh3_seed
 
 import (
 	"testing"
