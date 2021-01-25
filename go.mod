@@ -1,4 +1,4 @@
-module github.com/peroxyacyl/xxh3
+module github.com/peroxyacyl/xxh3_seed
 
 go 1.12
 
